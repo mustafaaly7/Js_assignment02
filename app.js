@@ -386,10 +386,52 @@
 
 
 
-var arr = ["This", "is", "my", "cat"];
+// var arr = ["This", "is", "my", "cat"];
 
-// Create a single string using array's join method
-var singleString = arr.join(" ");
+// // Create a single string using array's join method
+// var singleString = arr.join(" ");
 
-// Display the single string
-console.log(singleString);
+// // Display the single string
+// console.log(singleString);
+
+
+
+
+// ------> Q13
+
+
+
+// // Initialize an empty array
+// var fifoQueue = [];
+
+// // Add values one by one to the array (FIFO)
+// fifoQueue.push("Keyboard");
+// fifoQueue.push("Mouse");
+// fifoQueue.push("Printer");
+
+// // Access and remove values in the order they were stored (FIFO)
+// var firstValue = fifoQueue.shift();
+// var secondValue = fifoQueue.shift();
+// var thirdValue = fifoQueue.shift();
+
+// // Display Out
+// console.log("Out: \n", firstValue);
+// console.log("Out: \n", secondValue);
+// console.log("Out: \n", thirdValue);
+
+
+
+
+// ------> Q15
+
+
+
+
+var phoneManufacturers = ["Apple", "Samsung", "Motorola", "Nokia", "Sony", "Haier"];
+
+// Generate the dropdown/select menu using document.write()
+document.write("<select>");
+for (var i = 0; i < phoneManufacturers.length; i++) {
+    document.write("<option value='" + phoneManufacturers[i] + "'>" + phoneManufacturers[i] + "</option>");
+}
+document.write("</select>");
