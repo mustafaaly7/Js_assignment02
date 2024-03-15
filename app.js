@@ -171,3 +171,225 @@
 // } else { // Invalid input
 //     console.log("Invalid time format entered.");
 // }
+
+
+
+
+
+// ------> Q8
+
+
+// function processFlowchart(value1, value2) {
+//   // Check the first condition (replace with your actual condition)
+//   if (value1 > 10) {
+//     // If true, perform calculation A (replace with your calculation)
+//     const resultA = value1 * 2;
+//     console.log("Result A:", resultA);
+//   } else {
+//     // If false, check the second condition (replace with your actual condition)
+//     if (value2 < 5) {
+//       // If true, perform calculation B (replace with your calculation)
+//       const resultB = value2 + 3;
+//       console.log("Result B:", resultB);
+//     } else {
+//       // If all conditions are false, perform default action (optional)
+//       console.log("Default action (if applicable)");
+//     }
+//   }
+// }
+
+// // Example usage (replace with your input values)
+// const num1 = 15;
+// const num2 = 3;
+// processFlowchart(num1, num2);
+
+
+
+
+
+
+
+
+// ------> Chap 2 ARRAY
+
+// ----> Q1 - Q7
+
+
+// var studentNamesLiteral = [];
+
+// var studentNamesObject = new Array();
+
+// var stringsArray = ["apple", "banana", "orange"];
+
+// var numbersArray = [1, 2, 3, 4, 5];
+
+// var booleanArray = [true, false, true];
+
+// var mixedArray = ["apple", 3, true, "banana", false];
+
+// var educationQualifications = ["SSC", "HSC", "BCS", "BS", "BCOM", "MS", "M. Phil.", "PhD"];
+
+// // Displaying education qualifications in the browser
+// document.write("<h2>Education Qualifications in Pakistan:</h2>");
+// document.write("<ul>");
+// for (var i = 0; i < educationQualifications.length; i++) {
+//     document.write("<li>" + educationQualifications[i] + "</li>");
+// }
+// document.write("</ul>");
+
+
+
+
+
+// -----> Q8
+
+
+// // Array to store student names
+// var studentNames = ["Alice", "Bob", "Charlie"];
+
+// // Array to store scores of students
+// var scores = [400, 450, 380]; // Scores out of 500 for each student
+
+// // Calculate percentages
+// var percentages = [];
+// for (var i = 0; i < scores.length; i++) {
+//     percentages.push((scores[i] / 500) * 100);
+// }
+
+// // Display scores and percentages
+// console.log("Student Scores and Percentages:");
+// for (var i = 0; i < studentNames.length; i++) {
+//     console.log(studentNames[i] + ": Score = " + scores[i] + ", Percentage = " + percentages[i] + "%");
+// }
+
+
+
+
+
+// -----> Q9
+
+
+
+
+// // Initialize an array with color names
+// var colors = ["Red", "Green", "Blue"];
+
+// // Display the array elements in the browser
+// document.write("<h3>Initial Array:</h3>");
+// document.write("<p>" + colors.join(", ") + "</p>");
+
+// // Ask the user what color to add to the beginning
+// var colorToAddBeginning = prompt("Enter a color to add to the beginning:");
+
+// // Add the color to the beginning of the array
+// colors.unshift(colorToAddBeginning);
+
+// // Display the updated array in the browser
+// document.write("<h3>Array after adding color to the beginning:</h3>");
+// document.write("<p>" + colors.join(", ") + "</p>");
+
+// // Ask the user what color to add to the end
+// var colorToAddEnd = prompt("Enter a color to add to the end:");
+
+// // Add the color to the end of the array
+// colors.push(colorToAddEnd);
+
+// // Display the updated array in the browser
+// document.write("<h3>Array after adding color to the end:</h3>");
+// document.write("<p>" + colors.join(", ") + "</p>");
+
+// // Add two more colors to the beginning of the array
+// colors.unshift("Yellow", "Orange");
+
+// // Display the updated array in the browser
+// document.write("<h3>Array after adding two colors to the beginning:</h3>");
+// document.write("<p>" + colors.join(", ") + "</p>");
+
+// // Delete the first color in the array
+// colors.shift();
+
+// // Display the updated array in the browser
+// document.write("<h3>Array after deleting the first color:</h3>");
+// document.write("<p>" + colors.join(", ") + "</p>");
+
+// // Delete the last color in the array
+// colors.pop();
+
+// // Display the updated array in the browser
+// document.write("<h3>Array after deleting the last color:</h3>");
+// document.write("<p>" + colors.join(", ") + "</p>");
+
+// // Ask the user at which index to add a color and the color name
+// var indexToAddColor = parseInt(prompt("Enter the index to add a color:"));
+// var colorToAddAtIndex = prompt("Enter the color name:");
+
+// // Add the color to the desired position/index
+// colors.splice(indexToAddColor, 0, colorToAddAtIndex);
+
+// // Display the updated array in the browser
+// document.write("<h3>Array after adding color at desired position:</h3>");
+// document.write("<p>" + colors.join(", ") + "</p>");
+
+// // Ask the user at which index to delete color(s) and how many colors to delete
+// var indexToDeleteColor = parseInt(prompt("Enter the index to delete color(s):"));
+// var numColorsToDelete = parseInt(prompt("Enter the number of colors to delete:"));
+
+// // Remove the same number of color(s) from the user-defined position/index
+// colors.splice(indexToDeleteColor, numColorsToDelete);
+
+// // Display the updated array in the browser
+// document.write("<h3>Array after deleting color(s) from desired position:</h3>");
+// document.write("<p>" + colors.join(", ") + "</p>");
+
+
+
+
+
+// -----> Q10
+
+
+// // Array to store student scores
+// var studentScores = [320, 280, 480, 120];
+
+// // Sort the array in ascending order
+// studentScores.sort(function(a, b) {
+//     return a - b;
+// });
+
+// // Display the sorted array
+// console.log("Sorted student scores (ascending order):"+ studentScores);
+
+
+
+// -----> Q11
+
+
+
+
+// // Initialize an array with city names
+// var cities = ["Karachi", "Lahore", "Quetta", "Peshawar"];
+
+// // Initialize an empty array to store selected cities
+// var selectedCities = [];
+
+// // Copy 3 array elements from cities array to selectedCities array
+// selectedCities.push(cities[0], cities[2], "Islamabad");
+
+// // Display the selected cities array
+// console.log("Selected cities:", selectedCities);
+
+
+
+
+
+// ----->Q12
+
+
+
+var arr = ["This", "is", "my", "cat"];
+
+// Create a single string using array's join method
+var singleString = arr.join(" ");
+
+// Display the single string
+console.log(singleString);
